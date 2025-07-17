@@ -1415,5 +1415,6 @@ export const useMovies =()=>{
     const [movies] = useState(MOVIE_LIST.map(movie=>({...movie,trailer:`${TRAILER_API}/${movie.trailer}`,image:`${POSTER_API}/${movie.image}`})));
 //    const getMovies=useCallback((genre)=>{return genre ?movies.filter(movie=>movie.genre===genre):movies},[movies]);
 //     return {getMovies} 
+
 return movies;
 }
