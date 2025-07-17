@@ -1,0 +1,71 @@
+.header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #141414;
+    z-index: 5;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container{
+width: 14%;
+display: flex;
+text-decoration:none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+}
+.logo > img {
+    width: 100%;
+}
+.texts{
+  width: 25%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 30px;
+    gap: 10px   ;
+}
+.text{
+    font-size: 20px;
+     color:rgb(98, 98, 98);
+     cursor: pointer;
+}
+.text:hover{
+    color: white;
+     transform: scale(1.05);
+     transition: all 0.2s linear;
+}
+.title{
+    font-size: 22px;
+    color: white;
+}
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin-left: 550px;
+}

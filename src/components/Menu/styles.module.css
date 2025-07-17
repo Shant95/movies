@@ -1,0 +1,35 @@
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    z-index: 99999999;
+    background-color: white;
+    padding: 50px;
+    gap: 50px;
+}
+
+
+.menu.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu.hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.menu__list{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+
+.title{
+   margin-left: 25px;
+}

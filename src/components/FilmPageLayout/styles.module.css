@@ -1,0 +1,207 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 780px;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.header>h2{
+    color: white;
+}
+
+.blok{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 1rem;
+}
+
+.filters{
+    width: 25%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.filter{
+    margin-top: 20px;
+}
+
+
+
+.filterName{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.filterItem {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    color: white;
+    margin-top: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Добавлено для правильного расположения V */
+    padding: 0 10px; /* Добавлено для отступов */
+}
+
+.filterItem>h4{
+    width: 85%;
+    margin-left: 10px;
+}
+
+.filterItem:hover{
+    background-color: black;
+}
+
+.filterItemList {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 96%;
+    max-height: 200px;
+    margin-top: 5px;
+    border-radius: 1rem;
+    border: 1px solid white;
+    border-top: none;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Это правильное место для скрытия скролла */
+.filterItemList::-webkit-scrollbar {
+    display: none;
+}
+
+.filterListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    color: white;
+}
+
+.filterListItem input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+
+.filterListItem:hover {
+    background-color: #333;
+}
+
+.movieCard{
+    width: 72%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+.arrowUp {
+  display: none;
+}
+
+.filterItem:focus .arrowDown {
+  display: none;
+}
+
+.filterItem:hover .arrowUp {
+  display: inline-block;
+}
+
+.movieCard::-webkit-scrollbar {
+    display: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+    width: 90%;
+    height: 170px;
+    border-radius: 1rem;
+    border: 1px solid silver;
+   margin-top: 20px;
+   margin-left: 20px;
+   gap: 15px;
+}
+
+.card:hover{
+background-color: black;
+}
+
+.id {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id>p{
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.image{
+    width: 100px;
+    height: 140px;
+}
+
+.image>img{
+    width: 100%;
+    height: 100%;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 140px;
+}
+
+.name{
+    color:white;
+    margin-top: -22px;
+}
+
+.year{
+    display: flex;
+    flex-direction: row;
+    gap: 5px ;
+    margin-top: -20px;
+    color: white;
+}
+
+.genre{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-top: -10px;
+    color: white;
+}

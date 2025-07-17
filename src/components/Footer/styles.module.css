@@ -1,0 +1,98 @@
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    width: 100%;
+    background-color: #141414;
+    z-index: 2;
+}
+
+
+.links{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 60%;
+height: 30px;
+gap: 20px;
+margin-top: 10px;
+}
+
+.link{
+    color: silver;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: white;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    height:50px;
+    margin-top: 10px;
+}
+
+.icon{
+    width: 18%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.icon>img{
+    width: 100%;
+    height: 100%;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.text{
+    font-size: 18px;
+    color: white;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
+.item{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.item>img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    left: 75px;
+    top:10px;
+    width: 40px;
+    height: 40px;
+} 
+
+.logo>img{
+width: 100%;
+height: 100%;
+}
